@@ -1,0 +1,8 @@
+#count {
+  float: right;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+}
