@@ -10,16 +10,22 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'public'), // This must be exactly 'public'
   },
   mode: 'development',
   devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'), // Explicitly set content base
+    },
     port: 8564,
-    open: true,
+    open: true, // This enables auto-opening browser
+    hot: true,
   },
   devtool: 'inline-source-map',
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      filename: 'index.html', // Explicit output filename
+    }),
     new CleanWebpackPlugin(),
   ],
   optimization: {
