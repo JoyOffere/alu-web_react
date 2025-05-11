@@ -1,2 +1,1 @@
-React Intranet Projet 
-Author: Joy Offere
+Hello is Joy First task
