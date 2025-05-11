@@ -6,27 +6,29 @@ module.exports = {
   entry: {
     header: './modules/header/header.js',
     body: './modules/body/body.js',
-    footer: './modules/footer/footer.js',
+    footer: './modules/footer/footer.js'
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'public'), // This must be exactly 'public'
+    path: path.resolve(__dirname, 'public'),
+    clean: true
   },
   mode: 'development',
   devServer: {
     static: {
-      directory: path.join(__dirname, 'public'), // Explicitly set content base
+      directory: path.join(__dirname, 'public'),
     },
     port: 8564,
-    open: true, // This enables auto-opening browser
+    open: true,
     hot: true,
   },
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'index.html', // Explicit output filename
+      title: 'Holberton Dashboard',
+      filename: 'index.html'
     }),
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin()
   ],
   optimization: {
     splitChunks: {

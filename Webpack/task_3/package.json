@@ -3,19 +3,19 @@
   "version": "1.0.0",
   "scripts": {
     "build": "webpack",
-    "start-dev": "webpack serve --open" 
-   },
+    "start-dev": "webpack serve --open --port 8564"
+  },
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.11.1"
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "jquery": "^3.6.0",
+    "jquery": "^3.7.0",
     "lodash": "^4.17.21"
   }
 }
