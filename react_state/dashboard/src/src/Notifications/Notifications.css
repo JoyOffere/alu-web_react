@@ -1,0 +1,11 @@
+.Notifications {
+  border: 1px solid #e0354b;
+  padding: 10px;
+}
+.menuItem {
+  cursor: pointer;
+}
+.NotificationsPanel {
+  border: 1px solid #e0354b;
+  padding: 10px;
+}
