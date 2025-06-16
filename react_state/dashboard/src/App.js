@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Notifications from '../Notifications/Notifications';
-import Login from '../Login/Login';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import CourseList from '../CourseList/CourseList';
+import Notifications from './src/Notifications/Notifications';
+import Login from './src/Login/Login';
+import Header from './src/Header/Header';
+import Footer from './src/Footer/Footer';
+import CourseList from './src/CourseList/CourseList';
 
 class App extends Component {
   constructor(props) {
